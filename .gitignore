@@ -1,6 +1,8 @@
 node_modules/
 .env
 .env.local
+input/*
+!input/.gitkeep
 output/
 references/
 .claude/settings.local.json

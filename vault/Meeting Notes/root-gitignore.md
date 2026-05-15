@@ -17,6 +17,8 @@
 node_modules/
 .env
 .env.local
+input/*
+!input/.gitkeep
 output/
 references/
 .claude/settings.local.json
@@ -31,6 +33,7 @@ references/
 |--------------|------|
 | `node_modules/` | תלויות Node — נוצרים מ-`npm install` |
 | `.env` / `.env.local` | מפתחות API וערכים פנימיים |
+| `input/*` (+ `!input/.gitkeep`) | נתוני צי גולמיים — מכילים מספרי רישוי, עלויות, פרטי נהגים. ה-`.gitkeep` שומר את התיקייה ב-repo כדי שגל ידע איפה לחפש |
 | `output/` | תוצרי הסוכנים — גדולים, מתחדשים, אישיים |
 | `references/` | חומרי מותג ויזואליים פרטיים |
 | `.claude/settings.local.json` | הגדרות Claude Code פרטיות לכל משתמש |
@@ -61,3 +64,9 @@ references/
 - **Decisions:** ההגדרות האלה (workspace layout, hot reload, plugins מקומיים) שונות ממכשיר למכשיר ולא רלוונטיות לתיעוד הפרויקטי עצמו ב-vault.
 - **Notes / Caveats:** אם בעתיד נרצה להאחד הגדרות תצוגה בין מכשירים (לדוגמה קונפיגורציית graph view של ה-vault) — נשקול שוב.
 - **Related:** [[obsidian-skills]]
+
+### 2026-05-15 — החרגת תוכן input/ + שמירת התיקייה דרך .gitkeep [shipped]
+- **What was done:** נוסף `input/*` + `!input/.gitkeep` ל-`.gitignore`. קובץ ריק `input/.gitkeep` נוצר כדי לשמור את מבנה התיקייה ב-repo. נתוני התאונות (`תאונות רבעון 1-2026.xls`) נשארים מקומיים בלבד.
+- **Decisions:** ה-repo ציבורי ב-GitHub, ונתוני צי כוללים מספרי רישוי, עלויות ופרטי נהגים — סיכון פרטיות מוחשי. הפתרון הסטנדרטי `data-dir/*` + `.gitkeep` משאיר את הפרטיות בידי גלעד תוך שמירה על מבנה הפרויקט גלוי.
+- **Notes / Caveats:** [[agent-gal]] עדיין סורק את `input/` באמצעות Glob — הסריקה תעבוד מקומית בלי שינוי, אבל קלון רענן ב-GitHub יקבל תיקייה ריקה (וגלעד יצטרך להעלות קבצים בעצמו).
+- **Related:** [[agent-gal]], [[root-env-config]]
