@@ -1,13 +1,7 @@
 {
-  "name": "creative-agent-yuval",
-  "version": "1.0.0",
-  "type": "module",
-  "description": "Yuval - UX/UI designer agent powered by Nano Banana (Gemini 2.5 Flash Image)",
-  "scripts": {
-    "generate": "node scripts/generate.mjs"
-  },
-  "dependencies": {
-    "@google/genai": "^0.7.0",
-    "dotenv": "^16.4.5"
-  }
+  "name": "fleet-analysis-system",
+  "version": "0.1.0",
+  "description": "Fleet analysis multi-agent system for G1-Group — Excel/PowerPoint/Word/PDF outputs for ~600-vehicle fleet across group→division→branch hierarchy",
+  "private": true,
+  "type": "module"
 }
