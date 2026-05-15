@@ -6,6 +6,7 @@
 
 ### מבט-על
 - [[project-architecture]] — הצוות הדיגיטלי, זרימת העבודה, ומבנה התיקיות
+- [[eyal-ceo-agent-prd]] — PRD ליצירת סוכן אייל כסוכן עצמאי (טרם בוצע — `[planned]`)
 
 ### קבצי שורש (Root Config)
 - [[root-claude-md]] — `CLAUDE.md` — פרסונת אייל המנכ"ל

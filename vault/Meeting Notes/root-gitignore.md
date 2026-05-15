@@ -20,6 +20,7 @@ node_modules/
 output/
 references/
 .claude/settings.local.json
+.obsidian/
 .DS_Store
 *.log
 ```
@@ -33,6 +34,7 @@ references/
 | `output/` | תוצרי הסוכנים — גדולים, מתחדשים, אישיים |
 | `references/` | חומרי מותג ויזואליים פרטיים |
 | `.claude/settings.local.json` | הגדרות Claude Code פרטיות לכל משתמש |
+| `.obsidian/` | תיקיית הגדרות מקומיות של אפליקציית Obsidian (workspace state, plugins מקומיים) |
 | `.DS_Store` / `*.log` | קבצים סטנדרטיים שלא רלוונטיים ל-repo |
 
 ## קבצים קשורים
@@ -53,3 +55,9 @@ references/
 - **Decisions:** ה-vault הוא תיעוד פרויקטי שיתופי (לא זיכרון פרטי) — שווה לחלוק כדי שתיעוד מקיף יהיה זמין בכל מכשיר ולכל בעלי גישה ל-repo.
 - **Notes / Caveats:** `.env`, `output/`, `references/`, ו-`.claude/settings.local.json` נשארים מוחרגים.
 - **Related:** [[project-architecture]], [[obsidian-skills]]
+
+### 2026-05-15 — הוספת .obsidian/ להחרגה [shipped]
+- **What was done:** נוספה השורה `.obsidian/` ל-`.gitignore` — תיקיית הגדרות workspace של אפליקציית Obsidian נשמרת מקומית.
+- **Decisions:** ההגדרות האלה (workspace layout, hot reload, plugins מקומיים) שונות ממכשיר למכשיר ולא רלוונטיות לתיעוד הפרויקטי עצמו ב-vault.
+- **Notes / Caveats:** אם בעתיד נרצה להאחד הגדרות תצוגה בין מכשירים (לדוגמה קונפיגורציית graph view של ה-vault) — נשקול שוב.
+- **Related:** [[obsidian-skills]]
