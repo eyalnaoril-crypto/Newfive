@@ -32,3 +32,9 @@
 - **Decisions:** לא לערוך — זה קובץ אישי שמתעדכן אוטומטית כשגלעד מאשר פקודות.
 - **Notes / Caveats:** יש שאריות מפרויקט קודם (`elada`, `Yuval`). לא חוסם — רק רעש.
 - **Related:** [[root-gitignore]], [[project-architecture]]
+
+### 2026-05-15 — רענון: נוספה הרשאת `Bash(find vault *)` [shipped]
+- **What was done:** ב-Refresh pass זוהה ש-permission חדש (`Bash(find vault *)`) נוסף לקובץ אחרי סשני העבודה על ה-vault. זה תקין — Claude Code שמר אותה אוטומטית כשגלעד אישר את הפקודה.
+- **Decisions:** לא נדרשת פעולה — זו ההתנהגות הצפויה של settings.local.json.
+- **Notes / Caveats:** הקובץ ימשיך לגדול כך עם הזמן ויתכן שיצטרך לעבור consolidation דרך `fewer-permission-prompts`.
+- **Related:** [[root-gitignore]]

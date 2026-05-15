@@ -10,7 +10,6 @@
 
 ## Open Questions
 
-- ה-vault מוחרג ב-`.gitignore` — להחליט האם לחלוק אותו כדי שיהיה רב-מכשיר.
 - האם נצטרך גם `obsidian-bases` בפועל? כרגע אין `.base` files בפרויקט.
 - האם להגדיר תקן מילוי שדה `## Open Questions` (להוסיף `- none` כשאין שאלות פתוחות, או להשמיט את הסעיף)?
 
@@ -46,3 +45,9 @@
 - **Decisions:** קובץ אחד פר קובץ-פרויקט-שלנו (gal/irit/bar/barak/CLAUDE.md/env/...); קובץ מאחד לכל אוסף סקילים חיצוני (superpowers, obsidian). זה איזון בין דרישת המשתמש לתיעוד מפורט לבין דרישת הסקיל ל-one-file-per-topic.
 - **Notes / Caveats:** ההחלטה להפעיל את הסקיל בכל סשן נשמרה ב-memory של Claude. ה-vault מוחרג ב-`.gitignore` נכון לעכשיו.
 - **Related:** [[superpowers-plugin]], [[project-architecture]], [[root-gitignore]]
+
+### 2026-05-15 — רענון: הסרת Open Question שנפתר [shipped]
+- **What was done:** השאלה הפתוחה על `vault/` ב-`.gitignore` הוסרה — נפתרה כשהוסר `vault/` מההחרגה ב-commit `d4996ab`.
+- **Decisions:** סריקת רענון לכל קבצי vault — שני קבצים נמצאו לא מסונכרנים עם המציאות הנוכחית.
+- **Notes / Caveats:** ה-Session Log הקודם הזכיר שה-vault מוחרג; הערה זו כבר לא תקפה.
+- **Related:** [[root-gitignore]]
