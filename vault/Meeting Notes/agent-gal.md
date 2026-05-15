@@ -56,3 +56,9 @@
 - **Decisions:** גל מתועד יחד עם הסקיל שלו בקובץ אחד (לא קובץ נפרד לסוכן ולסקיל), כי הם חזיתות של אותו רכיב.
 - **Notes / Caveats:** הסקיל אסר לסטות מהנוסחאות בלי אישור מפורש. גלעד יכול לעדכן ערכי סף ב-`.env`.
 - **Related:** [[root-claude-md]], [[root-env-config]], [[agent-irit]], [[agent-bar]], [[agent-barak]], [[project-architecture]]
+
+### 2026-05-15 — קיבוע נתיבי קלט/פלט: input/ → output/ [shipped]
+- **What was done:** עודכנו `.claude/agents/gal.md` ו-`.claude/skills/gal-excel-fleet-analyst/SKILL.md` עם כלל ברזל: קלט גלם **תמיד** מ-`input/` (סריקה אוטומטית עם Glob אם לא צוין קובץ ספציפי), פלט **תמיד** ל-`output/` בתבנית שם קבועה.
+- **Decisions:** הוספת סעיף "נתיבי קבצים — חובה" בראש הסקיל, ובסעיף "עקרונות עבודה" של ה-agent. תיקייה `input/` כבר קיימת עם קובץ ראשון (`תאונות רבעון 1-2026.xls`).
+- **Notes / Caveats:** הכלל **`לעולם אל תשמור קבצים בתיקייה אחרת`** מנוסח מפורש כדי למנוע פיזור תוצרים. גם בסיכון של בקשה מהמשתמש לשמור במקום אחר — גל יציע `output/` כברירת מחדל.
+- **Related:** [[root-env-config]] (משתנה `INPUT_DIR`/`OUTPUT_DIR` שמסכים עם הכלל), [[project-architecture]]
