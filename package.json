@@ -3,5 +3,14 @@
   "version": "0.1.0",
   "description": "Fleet analysis multi-agent system for G1-Group — Excel/PowerPoint/Word/PDF outputs for ~600-vehicle fleet across group→division→branch hierarchy",
   "private": true,
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "chartjs-node-canvas": "^5.0.0",
+    "docx": "^9.6.1",
+    "exceljs": "^4.4.0",
+    "mammoth": "^1.12.0",
+    "pdfkit": "^0.18.0",
+    "xlsx": "^0.18.5"
+  }
 }

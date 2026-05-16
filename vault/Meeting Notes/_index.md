@@ -25,3 +25,6 @@
 ### סקילים חיצוניים
 - [[superpowers-plugin]] — 14 סקילי `obra/superpowers` (תהליכי פיתוח, debugging, code review)
 - [[obsidian-skills]] — 3 סקילי Obsidian (כולל obsidian-vault-workflow שמנהל את ה-vault הזה)
+
+### ניתוחים שבוצעו
+- [[fleet-accidents-q1-2026]] — Discovery analysis ראשון של תאונות Q1 2026 (77.8K ₪, 78 תאונות, סניף חריג)
